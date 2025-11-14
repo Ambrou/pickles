@@ -50,7 +50,7 @@
     <ProjectReference Include="..\Pickles.TestFrameworks\Pickles.TestFrameworks.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="6.3.0" />
+    <PackageReference Include="Autofac" Version="8.4.0" />
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.16.0" />
     <PackageReference Include="gherkin" Version="23.0.1" />
     <PackageReference Include="NLog" Version="4.7.15" />

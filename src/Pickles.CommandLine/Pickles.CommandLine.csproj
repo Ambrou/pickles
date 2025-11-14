@@ -73,7 +73,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="NDesk.Options.Core" Version="1.2.5" />
+    <PackageReference Include="NDesk.Options.Core" Version="1.2.8" />
     <PackageReference Include="Microsoft.Win32.Primitives" Version="4.3.0" />
     <PackageReference Include="NuGetizer" Version="1.4.6">
       <PrivateAssets>all</PrivateAssets>

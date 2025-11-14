@@ -2,7 +2,7 @@
   <PropertyGroup>
     <RootNamespace>PicklesDoc.Pickles</RootNamespace>
     <AssemblyName>PicklesDoc.Pickles.ObjectModel</AssemblyName>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyTitle>PicklesDoc.Pickles.ObjectModel</AssemblyTitle>
     <Description>The object model for Pickles</Description>
     <OutputPath>bin\$(Configuration)\</OutputPath>

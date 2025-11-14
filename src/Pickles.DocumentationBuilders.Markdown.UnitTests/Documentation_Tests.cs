@@ -50,7 +50,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.UnitTests
             var simpleFeature = new Feature();
             simpleFeature.Name = "My Feature";
             var relPath = "fakedir";
-            var location = fileSystem.FileInfo.FromFileName(@"c:\");
+            var location = fileSystem.FileInfo.New(@"c:\");
             var newNode = new FeatureNode(location, relPath, simpleFeature);
             var featureTree = new Tree(new FolderNode(location, relPath));
             featureTree.Add(newNode);

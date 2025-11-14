@@ -66,7 +66,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.UnitTests
             var fileSystem = (MockFileSystem)container.Resolve<IFileSystem>();
             var defaultOutputFile = fileSystem.Path.Combine("output","features.md");
 
-            configuration.OutputFolder = fileSystem.DirectoryInfo.FromDirectoryName(outputFolder);
+            configuration.OutputFolder = fileSystem.DirectoryInfo.New(outputFolder);
             var markdownDocumentationBuilder = container.Resolve<MarkdownDocumentationBuilder>();
 
             markdownDocumentationBuilder.Build(null);
@@ -82,7 +82,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.UnitTests
             var container = BuildContainer();
             var configuration = container.Resolve<IConfiguration>();
             var fileSystem = (MockFileSystem)container.Resolve<IFileSystem>();
-            configuration.OutputFolder = fileSystem.DirectoryInfo.FromDirectoryName(outputFolder);
+            configuration.OutputFolder = fileSystem.DirectoryInfo.New(outputFolder);
             var markdownDocumentationBuilder = container.Resolve<MarkdownDocumentationBuilder>();
 
             markdownDocumentationBuilder.Build(null);
@@ -108,7 +108,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.UnitTests
             var fileSystem = (MockFileSystem)container.Resolve<IFileSystem>();
             var defaultOutputFile = fileSystem.Path.Combine("output","features.md");
 
-            configuration.OutputFolder = fileSystem.DirectoryInfo.FromDirectoryName(outputFolder);
+            configuration.OutputFolder = fileSystem.DirectoryInfo.New(outputFolder);
             var markdownDocumentationBuilder = container.Resolve<MarkdownDocumentationBuilder>();
 
             markdownDocumentationBuilder.Build(null);
@@ -140,13 +140,13 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.UnitTests
             var fileSystem = (MockFileSystem)container.Resolve<IFileSystem>();
             var defaultOutputFile = fileSystem.Path.Combine("output", "features.md");
 
-            configuration.OutputFolder = fileSystem.DirectoryInfo.FromDirectoryName(outputFolder);
+            configuration.OutputFolder = fileSystem.DirectoryInfo.New(outputFolder);
             var markdownDocumentationBuilder = container.Resolve<MarkdownDocumentationBuilder>();
 
             var simpleFeature = new Feature();
             simpleFeature.Name = "Simple Feature";
             var relPath = "fakedir";
-            var location = fileSystem.FileInfo.FromFileName(fileSystem.Directory.GetCurrentDirectory());
+            var location = fileSystem.FileInfo.New(fileSystem.Directory.GetCurrentDirectory());
             var newNode = new FeatureNode(location, relPath, simpleFeature);
             var featureTree = new Tree(new FolderNode(location, relPath));
             featureTree.Add(newNode);

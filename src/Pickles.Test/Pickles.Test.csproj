@@ -88,7 +88,7 @@
     <PackageReference Include="NSubstitute" Version="5.3.0" />
     <PackageReference Include="NUnit" Version="3.13.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
-    <PackageReference Include="System.IO.Abstractions.TestingHelpers" Version="17.0.3" />
+    <PackageReference Include="System.IO.Abstractions.TestingHelpers" Version="22.0.16" />
     <PackageReference Include="System.IO.Packaging" Version="10.0.0" />
     <PackageReference Include="System.Resources.Extensions" Version="10.0.0" />
   </ItemGroup>

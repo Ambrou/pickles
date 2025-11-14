@@ -42,7 +42,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.AcceptanceTests.Step
         [Given(@"I specify the output folder as '(.*)'")]
         public void Given_I_Specify_The_Output_File_As(string outputFolder)
         {
-            Configuration.OutputFolder = this.FileSystem.DirectoryInfo.FromDirectoryName(outputFolder);
+            Configuration.OutputFolder = this.FileSystem.DirectoryInfo.New(outputFolder);
         }
 
         [When(@"I generate Markdown output")]

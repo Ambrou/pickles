@@ -71,14 +71,14 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Excel.UnitTests
                 Check.That(worksheet.Cell("E8").Value).IsEqualTo("Var2");
                 Check.That(worksheet.Cell("F8").Value).IsEqualTo("Var3");
                 Check.That(worksheet.Cell("G8").Value).IsEqualTo("Var4");
-                Check.That(worksheet.Cell("D9").Value).IsEqualTo(1.0);
-                Check.That(worksheet.Cell("E9").Value).IsEqualTo(2.0);
-                Check.That(worksheet.Cell("F9").Value).IsEqualTo(3.0);
-                Check.That(worksheet.Cell("G9").Value).IsEqualTo(4.0);
-                Check.That(worksheet.Cell("D10").Value).IsEqualTo(5.0);
-                Check.That(worksheet.Cell("E10").Value).IsEqualTo(6.0);
-                Check.That(worksheet.Cell("F10").Value).IsEqualTo(7.0);
-                Check.That(worksheet.Cell("G10").Value).IsEqualTo(8.0);
+                Check.That(worksheet.Cell("D9").Value).IsEqualTo("1");
+                Check.That(worksheet.Cell("E9").Value).IsEqualTo("2");
+                Check.That(worksheet.Cell("F9").Value).IsEqualTo("3");
+                Check.That(worksheet.Cell("G9").Value).IsEqualTo("4");
+                Check.That(worksheet.Cell("D10").Value).IsEqualTo("5");
+                Check.That(worksheet.Cell("E10").Value).IsEqualTo("6");
+                Check.That(worksheet.Cell("F10").Value).IsEqualTo("7");
+                Check.That(worksheet.Cell("G10").Value).IsEqualTo("8");
                 Check.That(row).IsEqualTo(11);
             }
         }
@@ -119,14 +119,14 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Excel.UnitTests
                 Check.That(worksheet.Cell("E10").Value).IsEqualTo("Var2");
                 Check.That(worksheet.Cell("F10").Value).IsEqualTo("Var3");
                 Check.That(worksheet.Cell("G10").Value).IsEqualTo("Var4");
-                Check.That(worksheet.Cell("D11").Value).IsEqualTo(1.0);
-                Check.That(worksheet.Cell("E11").Value).IsEqualTo(2.0);
-                Check.That(worksheet.Cell("F11").Value).IsEqualTo(3.0);
-                Check.That(worksheet.Cell("G11").Value).IsEqualTo(4.0);
-                Check.That(worksheet.Cell("D12").Value).IsEqualTo(5.0);
-                Check.That(worksheet.Cell("E12").Value).IsEqualTo(6.0);
-                Check.That(worksheet.Cell("F12").Value).IsEqualTo(7.0);
-                Check.That(worksheet.Cell("G12").Value).IsEqualTo(8.0);
+                Check.That(worksheet.Cell("D11").Value).IsEqualTo("1");
+                Check.That(worksheet.Cell("E11").Value).IsEqualTo("2");
+                Check.That(worksheet.Cell("F11").Value).IsEqualTo("3");
+                Check.That(worksheet.Cell("G11").Value).IsEqualTo("4");
+                Check.That(worksheet.Cell("D12").Value).IsEqualTo("5");
+                Check.That(worksheet.Cell("E12").Value).IsEqualTo("6");
+                Check.That(worksheet.Cell("F12").Value).IsEqualTo("7");
+                Check.That(worksheet.Cell("G12").Value).IsEqualTo("8");
                 Check.That(row).IsEqualTo(13);
             }
         }

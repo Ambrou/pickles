@@ -56,14 +56,14 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Excel.UnitTests
                 Check.That(worksheet.Cell("E6").Value).IsEqualTo("Var2");
                 Check.That(worksheet.Cell("F6").Value).IsEqualTo("Var3");
                 Check.That(worksheet.Cell("G6").Value).IsEqualTo("Var4");
-                Check.That(worksheet.Cell("D7").Value).IsEqualTo(1.0);
-                Check.That(worksheet.Cell("E7").Value).IsEqualTo(2.0);
-                Check.That(worksheet.Cell("F7").Value).IsEqualTo(3.0);
-                Check.That(worksheet.Cell("G7").Value).IsEqualTo(4.0);
-                Check.That(worksheet.Cell("D8").Value).IsEqualTo(5.0);
-                Check.That(worksheet.Cell("E8").Value).IsEqualTo(6.0);
-                Check.That(worksheet.Cell("F8").Value).IsEqualTo(7.0);
-                Check.That(worksheet.Cell("G8").Value).IsEqualTo(8.0);
+                Check.That(worksheet.Cell("D7").Value).IsEqualTo("1");
+                Check.That(worksheet.Cell("E7").Value).IsEqualTo("2");
+                Check.That(worksheet.Cell("F7").Value).IsEqualTo("3");
+                Check.That(worksheet.Cell("G7").Value).IsEqualTo("4");
+                Check.That(worksheet.Cell("D8").Value).IsEqualTo("5");
+                Check.That(worksheet.Cell("E8").Value).IsEqualTo("6");
+                Check.That(worksheet.Cell("F8").Value).IsEqualTo("7");
+                Check.That(worksheet.Cell("G8").Value).IsEqualTo("8");
                 Check.That(row).IsEqualTo(9);
             }
         }

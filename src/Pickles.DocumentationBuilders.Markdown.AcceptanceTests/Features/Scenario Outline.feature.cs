@@ -35,7 +35,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.AcceptanceTests.Feat
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Scenario Outlines", "    In order to document the Scenario Outlines\r\n    As a reader of the generated " +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en"), "Features", "Scenario Outlines", "    In order to document the Scenario Outlines\r\n    As a reader of the generated " +
                     "documentation\r\n    I want the scenario outlines to appear with steps and example" +
                     "s below the feature heading.", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
@@ -82,7 +82,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.AcceptanceTests.Feat
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Output has simple scenario outline", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 6
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -92,10 +92,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 8
+#line 10
     testRunner.Given("I have a feature called \'My Scenario Outline Feature\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 10
+#line 12
     testRunner.And("I have a scenario outline called \'Scenario Outline with Single Example\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
@@ -107,7 +107,7 @@ this.ScenarioInitialize(scenarioInfo);
                 table11.AddRow(new string[] {
                             "And",
                             "I have second given for <data_two>"});
-#line 12
+#line 14
     testRunner.And("I have the scenario steps", ((string)(null)), table11, "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
@@ -126,10 +126,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "Third",
                             "three",
                             "tree"});
-#line 17
+#line 19
     testRunner.And("I have an examples table", ((string)(null)), table12, "And ");
 #line hidden
-#line 23
+#line 25
     testRunner.When("I generate Markdown output", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
@@ -160,7 +160,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "> | Second | two | too |"});
                 table13.AddRow(new string[] {
                             "> | Third | three | tree |"});
-#line 25
+#line 27
     testRunner.Then("the Markdown output has the lines in the following order", ((string)(null)), table13, "Then ");
 #line hidden
             }
@@ -174,7 +174,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Output has table step scenario outline", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 41
+#line 43
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -184,10 +184,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 43
+#line 45
     testRunner.Given("I have a feature called \'My Scenario Outline Feature\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 45
+#line 47
     testRunner.And("I have a scenario outline called \'Scenario Outline with table step\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
@@ -199,7 +199,7 @@ this.ScenarioInitialize(scenarioInfo);
                 table14.AddRow(new string[] {
                             "TDA2",
                             "<data_two>"});
-#line 47
+#line 49
     testRunner.And("I have the scenario step with table \'Given I have a table\'", ((string)(null)), table14, "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
@@ -218,10 +218,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "Third",
                             "three",
                             "tree"});
-#line 52
+#line 54
     testRunner.And("I have an examples table", ((string)(null)), table15, "And ");
 #line hidden
-#line 58
+#line 60
     testRunner.When("I generate Markdown output", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
@@ -258,7 +258,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "> | Second | two | too |"});
                 table16.AddRow(new string[] {
                             "> | Third | three | tree |"});
-#line 60
+#line 62
     testRunner.Then("the Markdown output has the lines in the following order", ((string)(null)), table16, "Then ");
 #line hidden
             }

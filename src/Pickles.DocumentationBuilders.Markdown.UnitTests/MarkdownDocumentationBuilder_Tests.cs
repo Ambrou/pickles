@@ -43,7 +43,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.UnitTests
 
             var documentationBuilder = new MarkdownDocumentationBuilder(filesystem, configuration);
 
-            Assert.IsInstanceOf<IDocumentationBuilder>(documentationBuilder);
+            Assert.That(documentationBuilder, Is.InstanceOf<IDocumentationBuilder>());
         }
 
         [Test]
@@ -53,7 +53,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.UnitTests
 
             var markdownDocumentationBuilder = container.Resolve<MarkdownDocumentationBuilder>();
 
-            Assert.IsNotNull(markdownDocumentationBuilder);
+            Assert.That(markdownDocumentationBuilder, Is.Not.Null);
         }
 
         [Test]
@@ -71,7 +71,7 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.UnitTests
 
             markdownDocumentationBuilder.Build(null);
 
-            Assert.IsTrue(fileSystem.FileExists(defaultOutputFile));
+            Assert.That(fileSystem.FileExists(defaultOutputFile), Is.True);
         }
 
         [Test]
@@ -87,9 +87,9 @@ namespace PicklesDoc.Pickles.DocumentationBuilders.Markdown.UnitTests
 
             markdownDocumentationBuilder.Build(null);
 
-            Assert.IsTrue(fileSystem.FileExists(fileSystem.Path.Combine("output","pass.png")));
-            Assert.IsTrue(fileSystem.FileExists(fileSystem.Path.Combine("output","fail.png")));
-            Assert.IsTrue(fileSystem.FileExists(fileSystem.Path.Combine("output","inconclusive.png")));
+            Assert.That(fileSystem.FileExists(fileSystem.Path.Combine("output", "pass.png")), Is.True);
+            Assert.That(fileSystem.FileExists(fileSystem.Path.Combine("output", "fail.png")), Is.True);
+            Assert.That(fileSystem.FileExists(fileSystem.Path.Combine("output", "inconclusive.png")), Is.True);
         }
 
         [Test]

@@ -371,13 +371,24 @@ namespace PicklesDoc.Pickles.ObjectModel
                 return this.MapToScenarioOutline(scenario, tagsToHide);
             }
 
+            
             var background = sd as G.Background;
             if (background != null)
             {
                 return this.MapToScenario(background);
             }
 
+            var rule = sd as G.Rule;
+            if(rule != null)
+            {
+                return this.MapToRule(rule);
+            }
             throw new ArgumentException("Only arguments of type Scenario, ScenarioOutline and Background are supported.");
+        }
+
+        private IFeatureElement MapToRule(G.Rule rule)
+        {
+            throw new NotImplementedException();
         }
 
         private List<string> RetrieveOnlyVisibleTags(IEnumerable<G.Tag> originalTags,params string[] tagsToHide)

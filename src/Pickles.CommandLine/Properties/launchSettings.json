@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Pickles.CommandLine": {
+      "commandName": "Project",
+      "commandLineArgs": "--feature-directory=D:\\Data\\PLE\\Test\\unittest\\IntegrateNewZoomFormula\\eswBdd\\features  --output-directory=D:\\Data\\PLE\\Test\\DocBdd\\esw"
+    }
+  }
+}
